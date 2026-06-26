@@ -2,7 +2,7 @@ name: Build Manager CI
 
 on:
   push:
-    branches: [ "dev" ]
+    branches: [ "dev", "work/perf-rename-manager" ]
     paths:
       - '.github/workflows/build-manager.yml'
       - '.github/workflows/build-lkm.yml'
