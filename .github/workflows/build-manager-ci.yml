@@ -146,7 +146,7 @@ jobs:
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v5
-        if: ${{ ( github.event_name != 'pull_request' && (github.ref == 'refs/heads/dev' )) || github.ref_type == 'tag' }}
+        if: true
         with:
           name: ${{ matrix.spoofed && 'manager-spoofed' || 'manager' }}
           path: manager/app/build/outputs/apk/release/*.apk
